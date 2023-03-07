@@ -5,6 +5,7 @@ public class Pessoa {
 	private String corDoCabelo;
 	private String biotipo;
 	private int idade;
+	private Carro carro;
 	
 	
 	public Pessoa() {
@@ -41,9 +42,28 @@ public class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
+	
+	public Carro getCarro() {
+		return carro;
+	}
+	public void setCarro(Carro carro) {
+		this.carro = carro;
+	}
+	void ligarCarro() {
+		carro.ligar();
+	}
+	void desligarCarro() {
+		carro.desligar();
+	}
+	void acelerarCarro() {
+		carro.acelerar();
+	}
+	void frearCarro() {
+		carro.frear();
+	}
 	@Override
 	public String toString() {
-		return "\nPessoa --- nome: " + nome + " - corDoCabelo: " + corDoCabelo + " - biotipo: " + biotipo + " - idade: " + idade;
+		return "\nPessoa --- nome: " + nome + " // corDoCabelo: " + corDoCabelo + " // biotipo: " + biotipo + " // idade: " + idade;
 	}
 	
 

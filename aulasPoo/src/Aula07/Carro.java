@@ -5,17 +5,25 @@ public class Carro {
 	private String cor;
 	private String placa;
 	private int numPortas;
-private Pessoa dono;
-	
+	private Pessoa dono;
+	private int cambio;
+
+	public int getCambio() {
+		System.out.println("Marcha "+ this.cambio);
+		return cambio;
+	}
+	public void setCambio(int cambio) {
+		this.cambio = cambio;
+	}
 	public Pessoa getDono() {
-	return dono;
-}
-public void setDono(Pessoa dono) {
-	this.dono = dono;
-}
+		return dono;
+	}
+	public void setDono(Pessoa dono) {
+		this.dono = dono;
+	}
 
 	public Carro() {
-		
+
 	}
 	public Carro(String tipo, String cor, String placa, int numPortas) {
 		this.tipo=tipo;
@@ -23,7 +31,7 @@ public void setDono(Pessoa dono) {
 		this.placa=placa;
 		this.numPortas=numPortas;
 	}
-	
+
 	public String getTipo() {
 		return tipo;
 	}
@@ -48,8 +56,20 @@ public void setDono(Pessoa dono) {
 	public void setNumPortas(int numPortas) {
 		this.numPortas = numPortas;
 	}
+	void ligar() {
+		System.out.println("Carro ligado");
+	}
+	void desligar() {
+		System.out.println("Carro desligado");
+	}
+	void acelerar() {
+		System.out.println("VRUMM VRUMM");
+	}
+	void frear() {
+		System.out.println("Carro Freando");
+	}
 	@Override
 	public String toString() {
-		return "Carro ---- tipo: " + tipo + " - cor: " + cor + " - placa: " + placa + " - numPortas: " + numPortas+ dono.toString();
+		return "Carro ---- tipo: " + tipo + " // cor: " + cor + " // placa: " + placa + " // numPortas: " + numPortas+ dono.toString();
 	}
 }
