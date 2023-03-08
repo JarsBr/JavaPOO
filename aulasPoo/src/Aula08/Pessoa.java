@@ -15,5 +15,12 @@ public class Pessoa {
 	public String toString() {
 		return "Pessoa [pessoa=" + pessoa + "]";
 	}
-	
+
+	public Pessoa(String pessoa) {
+		this.pessoa = pessoa;
+	}
+	public Pessoa() {
+	}
+
+
 }

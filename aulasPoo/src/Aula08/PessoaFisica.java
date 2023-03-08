@@ -16,4 +16,11 @@ public class PessoaFisica extends Pessoa{
 		return "PessoaFisica [rg=" + rg + "]" + " Pessoa [pessoa=" + getPessoa() + "]";
 	}
 
+	public PessoaFisica(String pessoa, String rg) {
+		super(pessoa);
+		this.rg = rg;
+	}
+	public PessoaFisica() {
+
+	}
 }

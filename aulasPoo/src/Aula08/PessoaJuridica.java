@@ -16,4 +16,11 @@ public class PessoaJuridica extends Pessoa {
 		return "PessoaJuridica [cnpj=" + cnpj + "]" + " Pessoa [pessoa=" + getPessoa() + "]";
 	}
 
+	public PessoaJuridica(String pessoa, String cnpj) {
+		super(pessoa);
+		this.cnpj = cnpj;
+	}
+	public PessoaJuridica(){
+
+	}
 }
