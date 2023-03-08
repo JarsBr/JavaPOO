@@ -10,4 +10,10 @@ public class Pessoa {
 	public void setPessoa(String pessoa) {
 		this.pessoa = pessoa;
 	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [pessoa=" + pessoa + "]";
+	}
+	
 }

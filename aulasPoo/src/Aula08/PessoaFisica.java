@@ -11,4 +11,9 @@ public class PessoaFisica extends Pessoa{
 		this.rg = rg;
 	}
 
+	@Override
+	public String toString() {
+		return "PessoaFisica [rg=" + rg + "]" + " Pessoa [pessoa=" + getPessoa() + "]";
+	}
+
 }

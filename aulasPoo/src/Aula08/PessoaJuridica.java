@@ -11,4 +11,9 @@ public class PessoaJuridica extends Pessoa {
 		this.cnpj = cnpj;
 	}
 
+	@Override
+	public String toString() {
+		return "PessoaJuridica [cnpj=" + cnpj + "]" + " Pessoa [pessoa=" + getPessoa() + "]";
+	}
+
 }
