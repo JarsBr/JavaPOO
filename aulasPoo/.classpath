@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="sistemaBiblioteca"/>
 	<classpathentry kind="src" path="composicao"/>
+	<classpathentry kind="src" path="SistemaProfessor"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
