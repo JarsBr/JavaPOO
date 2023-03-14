@@ -3,6 +3,8 @@ package classe;
 public class Professor {
 	private String nome;
 	private int matricula, cargaHorario;
+	
+	
 	public String getNome() {
 		return nome;
 	}
